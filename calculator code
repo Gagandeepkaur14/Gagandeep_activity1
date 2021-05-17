@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+
+public class activity1_calculator {
+	
+	public static void main(String[] args) {
+		activity1_calculator c = new activity1_calculator();
+		int result = c.addition(8, 4);
+		System.out.println("Addition is = "+ result);
+
+		int result1 = c.multiplication(2,5);
+		System.out.println("Multiplicatioj is = "+ result1);
+		
+		int result2 = c.division(8, 2);
+		System.out.println("Division is = "+ result2);
+		
+		int result3 = c.substraction(15, 11);
+		System.out.println("Subtraction is = "+ result3);
+
+	}
+	
+	
+	public static int addition(int num1,int num2) {
+		return num1 + num2;
+		
+	}
+	public static int substraction (int num1,int num2) {
+		return num1 - num2;
+	}
+
+	
+	public static  int multiplication(int num1,int num2) {
+		return num1 * num2;
+	}
+	
+	public static int division(int num1,int num2) {
+		if (num2 == 0) {
+			
+throw new IllegalArgumentException("Number can not be divided by 0 !");
+		}
+		return num1 / num2;
+	}
+	
+}
+
+
