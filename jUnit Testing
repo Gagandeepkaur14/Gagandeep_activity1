@@ -1,0 +1,32 @@
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+
+class activity1_calculatorTest {
+
+	@Test
+	void testAdd() {
+		
+		assertEquals("error in add()",3, activity1_calculator.addition(1, 2));
+		assertEquals("error in add()",4, activity1_calculator.addition(2, 2));
+	}
+
+   @Test
+	void testMultiply() {
+		assertEquals("error in multiply()",4, activity1_calculator.multiplication(2, 2));
+	}
+
+
+   @Test
+	void testDivide() {
+		
+		assertEquals("error in division()",4, activity1_calculator.division(8,2));
+	
+		}
+
+	@Test
+	void testSubtract() {
+		assertEquals("error in subtraction()",1, activity1_calculator.substraction(3, 2));
+	}
+	
+}
